@@ -3,7 +3,9 @@ import os
 
 def check_dataset_structure():
     # Проверяем data.yaml
-    with open('dataset/data.yaml', 'r') as file:
+    # Можно выбрать:
+    # dataset/data или dataset_2/data
+    with open('dataset_2/data.yaml', 'r') as file:
         data = yaml.safe_load(file)
     
     print("Структура датасета:")

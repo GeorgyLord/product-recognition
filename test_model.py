@@ -5,7 +5,7 @@ def test_trained_model():
     model = YOLO('runs/detect/train/weights/best.pt')
     
     # Предсказание на тестовом изображении
-    results = model.predict('folder_for_testing/8.jpg', save=True, conf=0.5)
+    results = model.predict('folder_for_testing/1.jpg', save=True, conf=0.5)
     
     # Отображение результатов
     for r in results:

@@ -3,7 +3,7 @@ import os
 
 def train_yolov12():
     # Путь к конфигурационному файлу данных
-    data_yaml = "data.yaml"
+    data_yaml = "dataset_2/data.yaml"
     
     # Проверяем существование файла data.yaml
     if not os.path.exists(data_yaml):
@@ -21,17 +21,18 @@ def train_yolov12():
     # Параметры обучения
     training_params = {
         'data': data_yaml,
-        'epochs': 100,
+        'epochs': 10,
         'imgsz': 640,
         'batch': 16,
         'device': 'cpu',  # или '0' для GPU, 'cpu' для CPU
+        'resume': False,
         'workers': 4,
         'patience': 10,
         'save': True,
         'exist_ok': True,
         'pretrained': True,
         'optimizer': 'auto',
-        'lr0': 0.01,
+        'lr0': 0.001,
         'lrf': 0.01,
         'momentum': 0.937,
         'weight_decay': 0.0005,
