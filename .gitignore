@@ -1,0 +1,49 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+
+# Data and models
+data/raw/
+data/processed/
+models/
+*.pt
+*.pth
+*.onnx
+
+# Training results
+runs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+# .ipynb_checkpoints/
+# EOL
+
+# echo "✅ Настройка завершена!"
+# echo ""
+# echo "📝 Для активации окружения выполните:"
+# echo "   source .venv/bin/activate"
+# echo ""
+# echo "🐍 Для проверки установки выполните:"
+# echo "   python -c \"from ultralytics import YOLO; print('YOLO установлен успешно!')\""
+# echo ""
+# echo "🎯 Для запуска обучения:"
+# echo "   python train.py"
