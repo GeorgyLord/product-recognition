@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 16
+names: ['apple', 'bacon', 'banana', 'cabbage', 'carrot', 'chicken', 'cucumber', 'egg', 'eggplant', 'garlic', 'kiwi', 'lemon', 'onion', 'pear', 'potato', 'salmon']
+
+roboflow:
+  workspace: home-tvxgy
+  project: product-detected-c5igg
+  version: 9
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/home-tvxgy/product-detected-c5igg/dataset/9
